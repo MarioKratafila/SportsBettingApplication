@@ -148,7 +148,9 @@ public class TotoService {
 					}
 				}
 				
-				prize = r.getHits().getPrize(matches);
+				if (matches >=10 && matches <=14) {
+					prize = r.getHits().getPrize(matches);
+				}
 				
 			}
 		}
